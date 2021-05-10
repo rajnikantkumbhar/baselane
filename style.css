@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgba(206, 233, 255, 0.418),rgba(255,255,255,1));
+    padding: 2% 6%;
+    overflow: hidden;
+}
+
+
+.logo{
+    font-size: 24px;
+    color: rgb(21, 21, 110);
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+}
+
+.links a{
+    padding: 0 30px;
+    color: rgb(21, 21, 110);
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: rgb(42, 42, 185);
+    transition: 0.5s;
+}
+
+.cta-primary, .cta-secondary{
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.cta-primary{
+    background: rgb(21, 21, 110);
+    color: #fff;
+}
+
+.cta-primary:hover{
+    background: rgb(42, 42, 185);
+    transition: .5s;
+}
+
+.cta-secondary{
+    color: rgb(58, 58, 211);
+    background: transparent;
+    border: 1px solid rgb(187, 187, 235);
+    margin-right: 20px;
+}
+
+.cta-secondary:hover{
+    color: rgb(21, 21, 110);
+    border: 1px solid rgb(58, 58, 211);
+    transition: .5s;
+}
+
+.banner{
+    position: relative;
+    margin-top:80px;
+}
+
+.banner h1{
+    font-size: 42px;
+    color:rgb(21, 21, 110);
+}
+
+.banner p{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color:rgba(21, 21, 110, 0.705);
+}
+
+.small-text{
+    padding-top:10px;
+    font-size: 14px;
+    color:rgba(21, 21, 110, 0.705);
+}
+
+
+.selection{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 8px 0px;
+    background: rgb(205, 235, 255);
+    width: 280px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.selection a{
+    text-decoration: none;
+    padding: 8px 18px;
+    color: rgb(21, 21, 110);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.active-select{
+    background: #fff;
+}
+
+.pricing{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.card{
+    flex-basis: 30%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px 30px;
+    box-shadow: rgba(154, 180, 206, 0.2) 0px 2px 6px;
+}
+
+.card h3{
+    color: rgb(21, 21, 110);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card h2{
+    margin-top:16px;
+    color: rgb(58, 58, 211);
+    font-weight: 600;
+}
+
+.card h2::after{
+    content: "/month";
+    font-size: 16px;
+}
+
+.card p{
+    margin-bottom: 30px;
+}
+
+.lined{
+    margin-top : 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    font-size: 16px;
+}
+
+.card ul{
+    margin-top:-20px;
+    font-size: 14x;
+    list-style: none;
+    color:rgba(21, 21, 110, 0.705);
+}
+
+.card ul li{
+    padding-top: 25px;
+}
+
+.card ul li::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f058"; 
+    color: rgb(58, 58, 211);
+    font-size: 18px;
+}
+
+.foot-note{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.foot-note a{
+    color: rgb(42, 42, 185);
+    text-decoration: none;
+}
+
+.foot-note h4{
+    color:rgba(21, 21, 110, 0.705);
+    font-size: 16px;
+}
+
+.menu-icon{
+    font-size: 22px;
+    display: none;
+    color: rgb(21, 21, 110);
+    cursor: pointer;
+}
+
+.close-icon{
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    display: none;
+    color:#fff;
+}
+
+.popup{
+    position: relative;
+    margin: 0 auto;
+    height: 300;
+    width: 140;
+    background: blue;
+    z-index: 15;
+}
+
+
+@media(min-width:1500px)
+{
+    .container{
+        padding: 2% 12%;
+    }
+}
+
+@media(max-width:850px)
+{
+    .links{
+        padding: 30px;
+        position: absolute;
+        right: -100%;
+        top:0;
+        width: 100%;
+        height: 10%;
+        background: rgb(21, 21, 110);
+        z-index: 2;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .links a{
+        text-align: center;
+        color:#fff;
+    }
+
+    .links a:hover{
+        color:#fff;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .close-icon{
+        display: block;
+    }
+
+    .pricing{
+        flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+}

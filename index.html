@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baselane Company</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="navbar">
+            <div class="logo">
+                <i class="fab fa-affiliatetheme"></i><b>Base</b>lane
+            </div>
+            <div id="links" class="links">
+                <a href="">About Baseline</a>
+                <a href="">Careers</a>
+                <a href="">Help Center</a>
+                <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+            </div>
+            <div class="cta">
+                <a href="" class="cta-secondary">Log-in</a>
+                <a href="" class="cta-primary">Get Early Access</a>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+            
+        </section>
+
+        <section class="banner">
+            <h1>Simple, Transperent Pricing.</h1>
+            <p>
+                We allow you to take advantage of all our features<br>
+                for flexible monthly cost - no additional fees.
+            </p>
+            <a href="" class="cta-primary">Get Started for Free</a>
+            <p class="small-text">
+                All plans start with 60 days trial. No credit card required.
+            </p>
+        </section>
+
+        <div class="selection">
+            <a href="">Monthly</a>
+            <a href="" class="active-select">Annual (Save 17%)</a>
+        </div>
+
+        <section class="pricing">
+            <div class="card">
+                <h3>Starter</h3>
+                <h2>$10 </h2>
+                <p class="small-text">Billed annually</p>
+                <a class="cta-secondary" href="">Start Free 60 day Trial</a>
+
+                <p class="small-text lined">2 Units included</p>
+
+                <ul>
+                    <li> Smart one-click expense management </li>
+                    <li> Cashflow analytics and insights </li>
+                    <li> Property performance metrics </li>
+                    <li> Automated rent collection hub </li>
+                    <li> Dedicated tenant hub </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Pro</h3>
+                <h2>$15 </h2>
+                <p class="small-text">Billed annually</p>
+                <a class="cta-secondary" href="">Start Free 60 day Trial</a>
+
+                <p class="small-text lined">5 Units included</p>
+
+                <ul>
+                    <li> Smart one-click expense management </li>
+                    <li> Cashflow analytics and insights </li>
+                    <li> Property performance metrics </li>
+                    <li> Automated rent collection hub </li>
+                    <li> Dedicated tenant hub </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio</h3>
+                <h2>$20 </h2>
+                <p class="small-text">Billed annually</p>
+                <a class="cta-secondary" href="">Start Free 60 day Trial</a>
+
+                <p class="small-text lined">6 Units included</p>
+
+                <ul>
+                    <li> Smart one-click expense management </li>
+                    <li> Cashflow analytics and insights </li>
+                    <li> Property performance metrics </li>
+                    <li> Automated rent collection hub </li>
+                    <li> Dedicated tenant hub </li>
+                </ul>
+            </div>
+            
+        </section>
+        <div class="foot-note">
+            <h4>
+                If you have over 25 units, Please  <a href="">Contact us</a> for pricing.
+            </h4> 
+        </div>
+    </div>
+
+    <script>
+        var navlinks=document.getElementById("links");
+
+        window.addEventListener('scroll', event => {
+            hideMenu();
+        });
+
+        function showMenu(){
+            navlinks.style.right="0";
+            navlinks.style.transition="0.2s";
+        }
+
+        function hideMenu(){
+            navlinks.style.right="-100%";
+        }
+    </script>
+</body>
+</html>
